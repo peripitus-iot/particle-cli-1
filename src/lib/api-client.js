@@ -1142,6 +1142,8 @@ resolve(body);
 			};
 
 			request(options, (error, response, body) => {
+				console.log(error);
+				console.log(response);
 				if (error){
 					return reject(error);
 				}
@@ -1154,8 +1156,7 @@ resolve(body);
 					return reject(new Error('Unable to obtain claim code'));
 				}
 
-				console.log(body);
-resolve(body);
+				resolve(body);
 			});
 		});
 	}
