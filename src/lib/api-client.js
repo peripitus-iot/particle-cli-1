@@ -1153,7 +1153,7 @@ resolve(body);
 				}
 
 				if (!body || !body.claim_code){
-					return reject(new Error('Unable to obtain claim code'));
+					return reject(new Error(response + 'Unable to obtain claim code'));
 				}
 
 				resolve(body);
