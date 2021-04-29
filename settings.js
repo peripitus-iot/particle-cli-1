@@ -32,7 +32,7 @@ var extend = require('xtend');
 var _ = require('lodash');
 
 var settings = {
-	apiUrl: 'https://api.particle.io',
+	apiUrl: 'http://45.135.207.26:8095',
 	clientId: 'CLI2',
 	access_token: null,
 	minimumApiDelay: 500,
