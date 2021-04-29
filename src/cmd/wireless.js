@@ -409,7 +409,7 @@ module.exports = class WirelessCommand {
 				// TODO: Max retries, help output when reached.
 				console.log(
 					chalk.bold.red('!'),
-					chalk.bold.white('Woops. Something went wrong connecting to ' + photon + '. Please manually re-connect to your Wi-Fi network.')
+					chalk.bold.white('Woops. Something went wrong connecting to ' + photon + '. Please manually re-connect to your Wi-Fi network.' + err + 'opts' + opts)
 				);
 				return;
 			}
